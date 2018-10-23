@@ -2,12 +2,12 @@
 
 {% block content %}
 <ul>
-{% for tw in all_tweets %}
+{% for tw in tweets_html %}
     <li>{{ tw[0] }}<br><i>posted by</i> <strong>@{{ tw[1] }}</strong></li><br><br>
 {% endfor %}
 </ul>
 
-{% if not all_tweets %}
+{% if not tweets_html %}
     There are no saved tweets to show.
 {% endif %}
 
